@@ -1,0 +1,39 @@
+@import "../mixins";
+@import "../variables";
+
+.hero {
+    background: url('../img/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0 416px;
+
+    &-container {
+        @include flex(column, center, center);
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        color: $primary-color;
+        margin-bottom: 19px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $secondary-color;
+        padding: 0 21px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+}
