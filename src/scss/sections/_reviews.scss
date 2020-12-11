@@ -1,0 +1,49 @@
+@import "../mixins";
+@import "../variables";
+@import "../fonts";
+
+.reviews {
+  background: url('../img/reviews/reviews-bg.jpg') no-repeat center center;
+  background-size: cover;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    color: $primary-color;
+    text-align: center;
+    padding: 55px 0 55px;
+  }
+
+  .card {
+    padding-bottom: 45px;
+
+    &__img {
+      padding-bottom: 25px;
+      text-align: center;
+    }
+
+    &__text {
+      font-family: Lato, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: $primary-color;
+      font-style: italic;
+      text-align: center;
+      padding: 0 10px 45px;
+    }
+  }
+
+  &__desc {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #A291A5;
+    text-align: center;
+    padding: 0 20px 22px;
+    border-bottom: 2px solid #645766;
+
+  }
+}
