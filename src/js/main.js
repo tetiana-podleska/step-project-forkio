@@ -1,10 +1,6 @@
-const burgerBtn = document.querySelector('.nav-btn');
+const burgerBtn = document.querySelector('.burger');
+const menu = document.querySelector('.menu-list');
 burgerBtn.addEventListener('click', () => {
-    const mobileMenu = document.querySelector('.top-nav--mobile');
-    mobileMenu.classList.add('top-nav--opened');
+    burgerBtn.classList.toggle('burger--opened');
+    console.log(menu);
 });
-const burgerBtnOpened = document.querySelector('.top-nav__wrapper > .nav-btn');
-burgerBtnOpened.addEventListener('click', () => {
-    const mobileMenu = document.querySelector('.top-nav--mobile');
-    mobileMenu.classList.remove('top-nav--opened');
-})
