@@ -1,62 +1,63 @@
 .top-nav {
-  @include flex;
-  padding: 34px 15px;
-  background-color: #27262A;
   position: relative;
+  background-color: $navigation-bg-color;
+  padding: 32px 15px;
 
-  .site-logo__text{
-    display: none;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 16px;
-    color: $secondary-color;
-  }
+  .nav-logo {
 
-    &__menu--mobile {
+    &__wrapper {
+      @include flex(row, initial, center);
+
+      .nav-img {
+        padding-right: 20%;
+      }
+    }
+
+    &__text {
+      font-family: Lato, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 16px;
+      color: $secondary-color;
+      text-transform: uppercase;
+      padding-left: 17px;
       display: none;
     }
-
-    &__menu-item {
-      font-size: 26px;
-      font-weight: 400;
-      line-height: 26px;
-      color: $primary-color;
-      background-color: #333;
-      text-transform: uppercase;
-      padding: 29px 35px 109px 21px;
-      border-bottom: 3px solid #3b3b3b;
-    }
-
-    &__menu-item:hover {
-      color: $secondary-color;
-      border-left: 8px solid $secondary-color;
-    }
+  }
 
   .nav-btn {
-    @include flex(column, space-between);
-    position: absolute;
-    box-sizing: border-box;
-    top: 50%;
-    right: 0;
-
-    &__line {
-      height: 3px;
-      width: 26px;
-      border-radius: 5px;
-      background-color: $primary-color;
-    }
+    outline: none;
+    background-color: $secondary-color;
+    padding: 11px 15px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    color: $primary-color;
   }
+
 }
 
-.site-btn {
-  outline: none;
-  background-color: $secondary-color;
-  padding: 11px 10px;
-  border-radius: 40px;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 15px;
-  color: $primary-color;
+.burger {
+  @include flex(column, space-between, flex-end);
+  position: absolute;
+  box-sizing: border-box;
+  width: 27px;
+  height: 25px;
+  top: 40%;
+  right: 15px;
+
+  &__line {
+    background-color: $primary-color;
+    height: 3px;
+    width: 26px;
+
+    &--short {
+      background-color: $primary-color;
+      height: 3px;
+      width: 15px;
+    }
+  }
 }
 
 
