@@ -1,5 +1,14 @@
 @media (min-width: 481px) and (max-width: 992px) {
+  .top-nav {
 
+    .burger {
+      display: none;
+    }
+
+    .menu-list {
+      @include flex(space-between, center);
+    }
+  }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {}
