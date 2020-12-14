@@ -39,8 +39,6 @@
   .menu-list {
     position: absolute;
     top: 100%;
-    left: 5%;
-    display: none;
 
     &__item {
       padding: 29px 0 21px;
@@ -70,7 +68,7 @@
   box-sizing: border-box;
   width: 27px;
   height: 25px;
-  top: 40%;
+  top: 35%;
   right: 15px;
 
   &--opened {
@@ -82,7 +80,7 @@
         transform: translate(1px, 6px) rotate(45deg);
       }
       &:nth-child(3) {
-        transform: translate(1px, -4px) rotate(-45deg);
+        transform: translate(1px, -5px) rotate(-45deg);
       }
     }
   }
