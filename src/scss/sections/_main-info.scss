@@ -1,0 +1,114 @@
+.main-info {
+    @include flex(column, center, center);
+
+    &__descr {
+        font-size: 14px;
+        line-height: 16px;
+        color: #848E97;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 54px;
+    }
+
+    &__title {
+        font-size: 26px;
+        line-height: 28px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $primary-title-color;
+        margin-bottom: 27px;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: $secondary-title-color;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 36px;
+        text-align: center;
+        padding: 0 12px;
+    }
+}
+
+.btn {
+    font-size: 18px;
+    line-height: 20px;
+    color: $primary-color;
+    background-color: $secondary-color;
+    outline: none;
+    border: 2px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 40px;
+    padding: 13px 29px;
+    transition: color .3s, background-color .3s;
+    margin-bottom: 13px;
+
+    &-container {
+        transform: translateY(-25px);
+    }
+
+    &-sm {
+        @include flex();
+        margin: 0 5px;
+        margin-bottom: 20px;
+    }
+
+    &-left {
+        border: 1px solid $btn-border-color;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        padding: 3px 12px;
+        // background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.06) 100%);
+        @include flex(row, space-between, center);
+
+        & .octicon {
+            margin-right: 4px;
+        }
+    }
+
+    &-right {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 3px 12px;
+        border: 1px solid $btn-border-color;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-left: none;
+        color: $btn-text-color;
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $btn-text-color;
+    }
+}
+
+.dropdown-caret {
+    border-top: 4px solid $btn-text-color;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin-left: 4px;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    color: $secondary-color;
+    background-color: $primary-color;
+    border: 2px solid $secondary-color;
+}
+
+.summary-btn-container {
+    @include flex(row, center, center, wrap);
+    margin-bottom: 68px;
+}
+
+
