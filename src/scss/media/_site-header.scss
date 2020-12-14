@@ -1,104 +1,53 @@
 @media (min-width: 481px) and (max-width: 992px) {
-  .top-nav {
+  .top-nav{
     position: relative;
-    background-color: $navigation-bg-color;
-    padding: 32px 15px;
 
     .nav-logo {
-
+      
       &__wrapper {
-        @include flex(row, initial, center);
+        @include flex(row, space-between, center);
 
         .nav-img {
-          padding-right: calc((100% / 2) - 84px);
+        @include flex(row, initial, center);
+        }
+
+        .nav-text {
+          display: block;
         }
       }
-
-      &__text {
-        font-family: Lato, sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 16px;
-        color: $secondary-color;
-        text-transform: uppercase;
-        padding-left: 17px;
-        display: block;
-      }
-    }
-
-    .nav-btn {
-      outline: none;
-      background-color: $secondary-color;
-      padding: 11px 15px;
-      border-radius: 40px;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 15px;
-      color: $primary-color;
     }
 
     .menu-list {
+      @include flex(row, center, center);
       position: absolute;
       top: 100%;
-      left: 5%;
-      display: flex;
+      left: 0;
+      right: 0;
+      bottom: 0;
 
       &__item {
-        width: 290px;
-        padding: 29px 0 21px;
-        background-color: $menu-bg-color;
-        border-bottom: 3px solid $menu-border-color;
+        padding: 0 0 18px;
+        background-color: $navigation-bg-color;
       }
-      &__link {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 18px;
 
+      &__link {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 14px;
+        color: $secondary-color;
+        padding: 0 5px;
       }
 
       &__link:hover {
-        color: $secondary-color;
-        border-left: 3px solid $secondary-color;
-        padding-left: 29px;
+        color: $primary-color;
+        border-left: 0px solid $transparent-color;
+        padding-left: 0;
       }
     }
   }
 
   .burger {
-    @include flex(column, space-between, flex-end);
-    position: absolute;
-    box-sizing: border-box;
-    width: 27px;
-    height: 25px;
-    top: 40%;
-    right: 15px;
-
-    &--opened {
-      & .burger__line {
-        &--short {
-          transform: translate(400px, 0px);
-        }
-        &:nth-child(2) {
-          transform: translate(1px, 6px) rotate(45deg);
-        }
-        &:nth-child(3) {
-          transform: translate(1px, -4px) rotate(-45deg);
-        }
-      }
-    }
-
-    &__line {
-      background-color: $primary-color;
-      height: 3px;
-      width: 26px;
-      transition: 0.3s transform;
-
-      &--short {
-        background-color: $primary-color;
-        height: 3px;
-        width: 15px;
-      }
-    }
+    display: none;
   }
 }
 

@@ -11,17 +11,17 @@
       .nav-img {
         padding-right: calc((100% / 2) - 84px);
       }
-    }
 
-    &__text {
-      font-family: Lato, sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 16px;
-      color: $secondary-color;
-      text-transform: uppercase;
-      padding-left: 17px;
-      display: none;
+      .nav-text {
+        font-family: Lato, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 16px;
+        color: $secondary-color;
+        text-transform: uppercase;
+        padding-left: 17px;
+        display: none;
+      }
     }
   }
 
@@ -47,7 +47,7 @@
       padding: 29px 0 21px;
       background-color: $menu-bg-color;
       border-bottom: 3px solid $menu-border-color;
-      }
+    }
     &__link {
       font-size: 26px;
       font-weight: 400;
