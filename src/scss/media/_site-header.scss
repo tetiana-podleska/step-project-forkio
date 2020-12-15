@@ -90,8 +90,8 @@
         .nav-img {
           @include flex(row, initial, center);
 
-          .icon:hover .icon::after {
-            content: url('./src/img/forkio-hover.svg');
+          .img-icon:hover img.icon {
+            content: url('./src/img/forkio-hover.png');
             cursor: pointer;
           }
         }
