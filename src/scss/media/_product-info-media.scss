@@ -72,26 +72,16 @@
     }
 }
 
-// @media(min-width: 768px) {
-//     .product-item {
-//         &-img {
-//             width: 15%;
-//         }
-
-//         &-wrap {
-//             width: calc((100% - 15%) - 21px);
-//         }
-//     }
-// }
-
 @media(min-width: 993px) {
+    .product-info {
+        background-color:$product-bg-color;
+    }
     .layout-container {
         grid-template-columns: [full-start] minmax(1em, 1fr) 
         [main-start first-start] minmax(0, 40em) [first-end second-start] minmax(0, 40em)[second-end main-end]
         minmax(1em, 1fr) [full-end];
         row-gap: 18px;
         grid-template-rows: fit-content(10%);
-        // column-gap: 20px;
     }
 
     .product-info {
