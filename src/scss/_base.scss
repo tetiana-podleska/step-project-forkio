@@ -1,14 +1,19 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
-html {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
-}
-
 a {
     text-decoration: none;
 }
+
