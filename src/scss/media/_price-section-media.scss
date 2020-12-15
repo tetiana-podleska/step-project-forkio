@@ -1,0 +1,118 @@
+@media(min-width: 481px) {
+    .price {
+
+        background: url(../img/price-bg.jpg) no-repeat center center;
+        background-size: cover;
+        padding: 88px 0 94px;
+
+        &-items-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 25px;
+            justify-content: center;
+        }
+
+        &-item {
+            width: 90%;
+            justify-self: start;
+        }
+
+        &-item--sm {
+            justify-self: end;
+        }
+
+        &-item--lg {
+            justify-self: end;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 42px;
+            line-height: 44px;
+            margin-bottom: 39px;
+        }
+
+        &-item__descr {
+            margin-bottom: 50px;
+        }
+
+        &-item--sm {
+            & .price-item__descr {
+                margin-bottom: 67px;
+            }
+
+            & .price-item__btn {
+                margin-bottom: 36px;
+            }
+        }
+
+        &-item--lg {
+            & .price-item__price {
+                line-height: 90px;
+            }
+
+            & .price-item__text {
+                &:after {
+                     margin-top: 46px;
+                     margin-bottom: 40px;
+                }
+            }
+
+            & .price-item__descr {
+                line-height: 18px;
+            }
+        }
+    }
+    .descr__support {
+        margin-top: 0;
+    }
+
+}
+
+@media(min-width: 600px) {
+    .price {
+        &-item {
+            width: 257px;
+        }
+
+        &-item--lg {
+            width: 299px;
+        }
+    }
+}
+
+@media(min-width: 993px) {
+    .price {
+
+        padding: 112px 0 75px;
+
+        &-items-container {
+            grid-template-columns: 1fr 1fr 1.15fr 1fr;
+            column-gap: 15px;
+            justify-content: center;
+        }
+
+        &-item {
+            width: 100%;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .price {
+
+        &-items-container {
+            grid-template-columns: repeat(4, fit-content(25%));
+        }
+
+        &-item {
+            width: 257px;
+        }
+
+        &-item--lg {
+            width: 299px;
+        }
+    }
+}
+
+
