@@ -8,11 +8,11 @@
       }
     }
     &__desc {
-      padding: 0 30px 22px;
+      padding: 0 30px 33px;
     }
 
     &__desc::after {
-      top: 97%;
+      top: 91%;
     }
   }
 }
@@ -28,11 +28,11 @@
     }
 
     &__desc {
-      padding: 0 30px 20px;
+      padding: 0 30px 29px;
     }
 
     &__desc::after {
-      top: 96%;
+      top: 89%;
     }
   }
 }
@@ -54,11 +54,11 @@
     }
 
     &__desc {
-      padding: 0 34px 20px;
+      padding: 0 34px 32px;
     }
 
     &__desc::after {
-      top: 95%;
+      top: 83%;
     }
   }
 }
@@ -86,10 +86,6 @@
 }
 
 @media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
     .reviews {
       .reviews-list {
         display: grid;
