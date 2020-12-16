@@ -1,0 +1,132 @@
+.top-nav {
+  position: relative;
+  background-color: $navigation-bg-color;
+  padding: 32px 15px;
+
+  .nav-logo {
+
+    &__wrapper {
+      @include flex(row, initial, center);
+
+      .nav-img {
+        padding-right: calc((100% / 2) - 84px);
+      }
+
+      #Layer_1 {
+        width: 43px;
+        height: 41px;
+        .cls-1 {
+          fill: $secondary-color;
+        }
+      }
+
+      #Layer_1:hover {
+        .cls-1 {
+          fill: $primary-color;
+        }
+      }
+
+
+      .nav-text {
+        font-family: Lato, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 16px;
+        color: $secondary-color;
+        text-transform: uppercase;
+        padding-left: 17px;
+        display: none;
+      }
+    }
+  }
+
+  .nav-btn {
+    outline: none;
+    background-color: $secondary-color;
+    padding: 11px 15px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    color: $primary-color;
+  }
+
+  .nav-btn:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+
+  .menu {
+    display: none;
+
+    &--opened {
+      display: inline-flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+    }
+
+    .menu-list {
+
+      &__item {
+        padding: 29px 0 21px;
+        background-color: $menu-bg-color;
+        border-bottom: 3px solid $menu-border-color;
+      }
+
+      &__link {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $primary-color;
+        padding-bottom: 35px;
+        text-decoration: none;
+        border: 1px solid $transparent-color;
+      }
+
+      &__link:hover {
+        color: $secondary-color;
+        border-left: 8px solid $secondary-color;
+      }
+    }
+  }
+}
+
+.burger {
+  @include flex(column, space-between, flex-end);
+  position: absolute;
+  box-sizing: border-box;
+  height: 23px;
+  top: 35%;
+  right: 13px;
+
+  &--opened {
+    & .burger__line {
+      &--short {
+        transform: translate(400px, 0px);
+      }
+      &:nth-child(2) {
+        transform: translate(1px, 6px) rotate(45deg);
+      }
+      &:nth-child(3) {
+        transform: translate(1px, -4px) rotate(-45deg);
+      }
+    }
+  }
+
+  &__line {
+    background-color: $primary-color;
+    height: 3px;
+    width: 26px;
+    transition: 0.3s transform;
+
+    &--short {
+      background-color: $primary-color;
+      height: 3px;
+      width: 15px;
+    }
+  }
+}
+
+

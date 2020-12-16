@@ -1,0 +1,167 @@
+@media (min-width: 481px) and (max-width: 992px) {
+  .top-nav {
+    position: relative;
+
+    .nav-logo {
+
+      &__wrapper {
+        @include flex(row, space-between, center);
+
+        .nav-img {
+          @include flex(row, initial, center);
+        }
+
+        #Layer_1:hover {
+          .cls-1 {
+            fill: $primary-color;
+          }
+        }
+
+        .nav-text {
+          display: block;
+        }
+
+        .nav-text:hover {
+          color: $primary-color;
+        }
+
+        .nav-btn {
+          background-color: $secondary-color;
+          color: $primary-color;
+        }
+
+        .nav-btn:hover {
+          background-color: $primary-color;
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .menu {
+      @include flex(row, space-evenly, center);
+      position: absolute;
+      top: 80%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      .menu-list {
+        @include flex(row, space-evenly, center);
+        height: 18px;
+        background-color: $navigation-bg-color;
+
+        &__item {
+          padding: 0 0 25px 18px;
+          background-color: $transparent-color;
+          border-bottom: 0 solid $transparent-color;
+        }
+
+        &__link {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 15px;
+          color: $secondary-color;
+          padding: 0 0;
+          border: 1px solid $transparent-color;
+        }
+
+        &__link:hover {
+          color: $primary-color;
+          border-left: 1px solid $transparent-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+
+@media (min-width: 993px) {
+  .top-nav {
+    position: relative;
+
+    .nav-logo {
+
+      &__wrapper {
+        @include flex(row, space-between, center);
+        padding: 0 90px;
+
+        .nav-img {
+          @include flex(row, initial, center);
+
+          #Layer_1:hover {
+            .cls-1 {
+              fill: $primary-color;
+            }
+          }
+        }
+
+        .nav-text {
+          display: block;
+        }
+
+        .nav-text:hover {
+          color: $primary-color;
+          cursor: pointer;
+        }
+
+        .nav-btn {
+          background-color: $secondary-color;
+          color: $primary-color;
+          padding: 11px 20px;
+        }
+
+        .nav-btn:hover {
+          background-color: $primary-color;
+          color: $secondary-color;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .menu {
+      @include flex(row, space-evenly, center);
+      height: 0;
+      background-color: $navigation-bg-color;
+
+
+      .menu-list {
+        @include flex(row, space-evenly, center);
+        position: absolute;
+        top: 0;
+        left: 40%;
+        right: 22%;
+        bottom: 0;
+
+        &__item {
+          padding: 0;
+          background-color: $transparent-color;
+          border-bottom: 0 solid $transparent-color;
+        }
+
+        &__link {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 15px;
+          color: $secondary-color;
+          padding: 0 0;
+        }
+
+        &__link:hover {
+          color: $primary-color;
+          border-left: 0 solid $transparent-color;
+          padding-left: 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+}
