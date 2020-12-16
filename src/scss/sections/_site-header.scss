@@ -12,6 +12,15 @@
         padding-right: calc((100% / 2) - 84px);
       }
 
+      #Layer_1 {
+        width: 43px;
+        height: 41px;
+        .cls-1 {
+          fill: $secondary-color;
+        }
+      }
+
+
       .nav-text {
         font-family: Lato, sans-serif;
         font-size: 24px;
@@ -62,11 +71,12 @@
         color: $primary-color;
         padding: 0 35px;
         text-decoration: none;
+        border: 1px solid $transparent-color;
       }
 
       &__link:hover {
         color: $secondary-color;
-        border-left: 3px solid $secondary-color;
+        border-left: 8px solid $secondary-color;
         padding-left: 29px;
       }
     }

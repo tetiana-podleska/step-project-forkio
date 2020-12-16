@@ -10,8 +10,11 @@
         .nav-img {
           @include flex(row, initial, center);
         }
-        .nav-img:hover svg path {
-          fill: $primary-color;
+
+        #Layer_1:hover {
+          .cls-1 {
+            fill: $primary-color;
+          }
         }
 
         .nav-text {
@@ -21,16 +24,16 @@
         .nav-text:hover {
           color: $primary-color;
         }
-      }
 
-      .nav-btn {
-        background-color: $secondary-color;
-        color: $primary-color;
-      }
+        .nav-btn {
+          background-color: $secondary-color;
+          color: $primary-color;
+        }
 
-      .nav-btn:hover {
-        background-color: $primary-color;
-        color: $secondary-color;
+        .nav-btn:hover {
+          background-color: $primary-color;
+          color: $secondary-color;
+        }
       }
     }
 
@@ -59,12 +62,13 @@
           line-height: 15px;
           color: $secondary-color;
           padding: 0 0;
+          border: 1px solid $transparent-color;
         }
 
         &__link:hover {
           color: $primary-color;
-          border-left: 0 solid $transparent-color;
-          padding-left: 0;
+          border-left: 8px solid $transparent-color;
+          padding-left: 29px;
           cursor: pointer;
         }
       }
@@ -90,9 +94,10 @@
         .nav-img {
           @include flex(row, initial, center);
 
-          .img-icon:hover img.icon {
-            content: url('./src/img/forkio-hover.png');
-            cursor: pointer;
+          #Layer_1:hover {
+            .cls-1 {
+              fill: $primary-color;
+            }
           }
         }
 
