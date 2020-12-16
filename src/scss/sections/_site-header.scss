@@ -20,6 +20,12 @@
         }
       }
 
+      #Layer_1:hover {
+        .cls-1 {
+          fill: $primary-color;
+        }
+      }
+
 
       .nav-text {
         font-family: Lato, sans-serif;
@@ -43,6 +49,11 @@
     font-weight: 700;
     line-height: 15px;
     color: $primary-color;
+  }
+
+  .nav-btn:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
   }
 
   .menu {
