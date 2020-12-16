@@ -1,6 +1,6 @@
 #### О проекте
-- SCSS, Javascript, Gulp, HTML
-- Olena Shedenko, Tetiana Podleska
+- **Список использованных технологий** - SCSS, Javascript, Gulp, HTML
+- **Состав участников проекта** - Olena Shedenko, Tetiana Podleska
 - **Tetiana Podleska** 
   - Сверстать шапку сайта с верхним меню (включая выпадающее меню при малом разрешении экрана). 
   - Сверстать секцию `People Are Talking About Fork`.
