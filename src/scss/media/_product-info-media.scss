@@ -1,15 +1,5 @@
 @import "../variables";
 
-@media(min-width: 330px) {
-    .product-info {
-        &__img {
-            width: 100%;
-            height: auto;
-            display: block;
-        } 
-    }
-}
-
 @media(min-width: 481px) {
     .product-info {
         padding: 61px 0 0;
@@ -32,10 +22,12 @@
             @include flex(row, center);
         }
 
-        &-wrap {
+        &__text-block {
             width: calc((100% - 22%) - 21px);
         }
+    }
 
+    .text-block {
         &__title {
             line-height: 21px;
         }
@@ -50,22 +42,18 @@
 }
 
 @media(min-width: 600px) {
-    .product-info {
-        &-img {
-            width: 100vw;
-        }
-
-    }
 
     .product-item {
         &-img {
             width: 18%;
         }
 
-        &-wrap {
+        &__text-block {
             width: calc((100% - 18%) - 21px);
         }
+    }
 
+    .text-block {
         &__title {
             margin-bottom: 15px;
         }
@@ -92,8 +80,7 @@
             margin-bottom: 0;
         }
 
-        &-img {
-            width: 70vw;
+        &__img {
             grid-column: second / full;
             grid-row: 2 / span 8;
         }
@@ -102,10 +89,6 @@
             grid-column: first;
             margin-bottom: 16px;
             margin-right: 30px;
-        }
-
-        &__img {
-            width: 100%;
         }
     }
 
@@ -130,10 +113,13 @@
             width: 21%;
         }
         
-        &-wrap {
+        &__text-block {
             width: calc((100% - 21%) - 21px);
         }
+    }
 
+    .text-block {
+        
         &__title {
             margin-bottom: 16px;
         }
@@ -143,7 +129,7 @@
 
 @media(min-width: 1200px) {
     .product-info {
-        &-img {
+        &__img {
             width: 50vw;
         }
 
