@@ -20,7 +20,7 @@
 @media (min-width: 401px) and (max-width: 480px) {
   .reviews {
 
-    .card {
+    .reviews-card {
 
       &__text {
         padding: 0 55px 45px;
@@ -46,7 +46,7 @@
       align-items: center;
     }
 
-    .card {
+    .reviews-card {
 
       &__text {
         padding: 0 10px 45px;
@@ -72,7 +72,7 @@
         align-items: center;
       }
 
-      .card {
+      .reviews-card {
 
         &__text {
           padding: 0 15px 45px;
