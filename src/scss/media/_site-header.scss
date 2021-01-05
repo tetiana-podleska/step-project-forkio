@@ -85,7 +85,6 @@
 
     &__wrapper {
       @include flex(row, space-between, center);
-      padding-right: 20px;
 
       .nav-link {
         @include flex(row, initial, center);
