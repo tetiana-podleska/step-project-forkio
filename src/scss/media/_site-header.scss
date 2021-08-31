@@ -1,39 +1,38 @@
 @media (min-width: 481px) and (max-width: 992px) {
   .top-nav {
     position: relative;
+    padding: 32px 0;
 
-    .nav-logo {
+    &__wrapper {
+      @include flex(row, space-between, center);
 
-      &__wrapper {
-        @include flex(row, space-between, center);
+      .nav-link {
+        @include flex(row, initial, center);
 
-        .nav-img {
-          @include flex(row, initial, center);
-        }
-
-        #Layer_1:hover {
-          .cls-1 {
-            fill: $primary-color;
-          }
-        }
-
-        .nav-text {
+         .nav-text {
           display: block;
         }
+      }
 
-        .nav-text:hover {
-          color: $primary-color;
+      .nav-link:hover #Layer_1 {
+        .cls-1 {
+          fill: $primary-color;
+          cursor: pointer;
         }
+      }
+      .nav-link:hover .nav-text {
+        color: $primary-color;
+        cursor: pointer;
+      }
 
-        .nav-btn {
-          background-color: $secondary-color;
-          color: $primary-color;
-        }
+      .nav-btn {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
 
-        .nav-btn:hover {
-          background-color: $primary-color;
-          color: $secondary-color;
-        }
+      .nav-btn:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
       }
     }
 
@@ -84,42 +83,36 @@
   .top-nav {
     position: relative;
 
-    .nav-logo {
+    &__wrapper {
+      @include flex(row, space-between, center);
 
-      &__wrapper {
-        @include flex(row, space-between, center);
-        padding: 0 90px;
-
-        .nav-img {
-          @include flex(row, initial, center);
-
-          #Layer_1:hover {
-            .cls-1 {
-              fill: $primary-color;
-            }
-          }
-        }
+      .nav-link {
+        @include flex(row, initial, center);
 
         .nav-text {
           display: block;
         }
-
-        .nav-text:hover {
-          color: $primary-color;
+      }
+      .nav-link:hover #Layer_1 {
+        .cls-1 {
+          fill: $primary-color;
           cursor: pointer;
         }
+      }
+      .nav-link:hover .nav-text {
+        color: $primary-color;
+        cursor: pointer;
+      }
+      .nav-btn {
+        background-color: $secondary-color;
+        color: $primary-color;
+        padding: 11px 20px;
+      }
 
-        .nav-btn {
-          background-color: $secondary-color;
-          color: $primary-color;
-          padding: 11px 20px;
-        }
-
-        .nav-btn:hover {
-          background-color: $primary-color;
-          color: $secondary-color;
-          cursor: pointer;
-        }
+      .nav-btn:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+        cursor: pointer;
       }
     }
 
@@ -134,7 +127,7 @@
         position: absolute;
         top: 0;
         left: 40%;
-        right: 22%;
+        right: calc(100% / 4);
         bottom: 0;
 
         &__item {
